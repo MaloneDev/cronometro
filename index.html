@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="assets/css/alarme.css" />
+  <meta charset="UTF-8" />
+  <head>
+    <title>Projeto Cronometro - JavaScript</title>
+    <link rel="stylesheet" href="assets/css/alarme.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  </head>
+
+  <body>
+    <audio id="sound" src="alarm.mp3" style="display: none"></audio>
+    <div class="relogio">
+        <div>
+            <span id="horas">00</span>
+            <span class="tempo">Horas</span>
+        </div>
+
+        <div>
+            <span id="minutos">00</span>
+            <span class="tempo">Minutos</span>
+        </div>
+
+        <div>
+            <span id="segundos">00</span>
+            <span class="tempo">Segundos</span>
+        </div>
+
+    </div>
+
+    <div id="cronometro" >
+        <button id="btnIniciar" name="iniciarCronometro" class="btn btn-primary btn-lg"><i class="fas fa-play"></i>  Iniciar</button>
+        <button id="btnPausar" name="pausarCronometro" type="button" class="btn btn-primary btn-lg"><i class="fas fa-pause"></i>  Pausar</button>
+        <button id="btnParar" name="pararCronometro" type="button" class="btn btn-primary btn-lg"><i class="fas fa-stop"></i>  Stop</button>
+    </div>  
+
+    <script src="assets/js/alarme.js"></script>
+  </body>
+</html>
